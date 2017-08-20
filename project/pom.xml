@@ -13,9 +13,19 @@
 	<modules>
 		<module>algorithm</module>
 	</modules>
-	
-	<organization>BrazilianBytes</organization>
-	
+
+	<organization>
+		<name>BrazilianBytes</name>
+	</organization>
+
+	<ciManagement>
+		<url>https://travis-ci.org/brazilianbytes/ctci-adventures</url>
+	</ciManagement>
+
+	<scm>
+		<url>https://github.com/brazilianbytes/ctci-adventures.git</url>
+	</scm>
+
 	<properties>
 		<sonar.projectName>ctci-adventures</sonar.projectName>
 	</properties>
