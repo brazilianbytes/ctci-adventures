@@ -3,7 +3,7 @@ sudo: false
 install: true
 addons:
   sonarcloud:
-    organization: "brazilianbytes-github"
+    organization: "brazilianbytes"
     token:
       secure: "DnTdzC52YJoddFt4WzgHk0pP3yxNgTY5vXTgfnYpZ38u5ix7xRr1cUTT434ctEZqQIfV9ki2TL4/1C2d65TJD6zrO3ZqM7Jdpxzu6UJuuuQU/M1dEMlMZ6p2BZ9nHZ4S4wKGim6dliuLDZl/j+lHDhzKHYg/NVwq5o2pS9xzHaaWDPihIL8NDB0Oj5erx40MpEQe72vnTCrmWkVmU82AFdv/Im7fBu1NVgZf4h9w1qkzlps5820RsYxnST5/gGyu3En20HpyezLqJgg8JDs8HhasoXLQEt38xIUQOUm6IKjd9LTVPrx/RLKFPaUZ/ySeIq5TjJlbXUAFD+RQwQWTq/FaR4djjRBVF4EdXqgQpiYp8ENysFNOHPtOuh2Qt+E6Ev10lkjQfsACGxnmYLNxphd4+vfDGm7nzpIpEa26+PyA+0ul90Of0G5gpbH48eZmUD2frs0dKBvnk4h+kvBUKxPtgyvjbjpWtLxOD5vyzFgHbap+d315P1kqxAqIk/Afor36SUw5eN0h2tTvh/3DicVByHU9u0acb3LqYfgSmIdcJDabNbh1WooFqXreTvQsEQTHnyaX6B7CayUHm6srieyN9lVubQtkc+cbtCSLV3b+LSyeeNVsGyVZh0o8Ta9GkHwWGUqLN3Th6I4KMmLOpXGfmSDBf4ArxtQ3Rt2ZYJk="
 jdk:
