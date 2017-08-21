@@ -3,7 +3,7 @@ package com.brazilianbytes.ctci.algorithm.sort;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class SortTest {
+public class SortFixedTest {
 
 	private static final Integer[] ORIGINAL = { -1, 7, 0, -2, 1, 3, 4, 5, 10, 9, 8, -3, 11, 14, 17, 15, 18, 19, 20,
 			-6 };
@@ -19,4 +19,15 @@ public class SortTest {
 		
 		Assert.assertArrayEquals(SOLUTION, input);
 	}
+
+	@Test
+	public void selectionTest() {
+
+		Integer[] input = ORIGINAL.clone();
+
+		Sort.algorithm().selection().sort(input, (x, y) -> Integer.compare(x, y));
+		
+		Assert.assertArrayEquals(SOLUTION, input);
+	}
+
 }

@@ -55,7 +55,7 @@
 		</profile>
 
 		<profile>
-			<id>java-tester</id>
+			<id>quality</id>
 			<activation>
 				<file>
 					<exists>src/test/java</exists>
@@ -63,11 +63,20 @@
 			</activation>
 			<reporting>
 			</reporting>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.jacoco</groupId>
+						<artifactId>jacoco-maven-plugin</artifactId>
+						<configuration>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
 			<dependencies>
 				<dependency>
 					<groupId>junit</groupId>
 					<artifactId>junit</artifactId>
-					<version>4.12</version>
 					<scope>test</scope>
 				</dependency>
 			</dependencies>
@@ -83,6 +92,12 @@
 					<artifactId>maven-compiler-plugin</artifactId>
 					<version>3.6.1</version>
 				</plugin>
+				<plugin>
+					<groupId>org.jacoco</groupId>
+					<artifactId>jacoco-maven-plugin</artifactId>
+					<version>0.7.9</version>
+				</plugin>
+
 			</plugins>
 		</pluginManagement>
 	</build>
