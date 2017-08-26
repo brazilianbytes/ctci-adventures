@@ -11,35 +11,33 @@ public class SortFixedTest {
 	private static final Integer[] SOLUTION = { -6, -3, -2, -1, 0, 1, 3, 4, 5, 7, 8, 9, 10, 11, 14, 15, 17, 18, 19,
 			20 };
 
-	@Ignore
 	@Test
 	public void bubbleTest() {
 
-		Integer[] input = ORIGINAL.clone();
+		final Integer[] input = ORIGINAL.clone();
 
 		Sort.algorithm().bubble().sort(input, (x, y) -> Integer.compare(x, y));
-		
+
 		Assert.assertArrayEquals(SOLUTION, input);
 	}
 
-	@Ignore
 	@Test
 	public void selectionTest() {
 
-		Integer[] input = ORIGINAL.clone();
+		final Integer[] input = ORIGINAL.clone();
 
 		Sort.algorithm().selection().sort(input, (x, y) -> Integer.compare(x, y));
-		
+
 		Assert.assertArrayEquals(SOLUTION, input);
 	}
 
 	@Test
 	public void insertionTest() {
 
-		Integer[] input = new Integer[] { 5,3,4,7,2,8,6,9,1 };
+		final Integer[] input = ORIGINAL.clone();
 
 		Sort.algorithm().insertion().sort(input, (x, y) -> Integer.compare(x, y));
-		
+
 		Assert.assertArrayEquals(SOLUTION, input);
 	}
 
