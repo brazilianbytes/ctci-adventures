@@ -16,9 +16,19 @@ public class SortRandomTest {
 	}
 
 	@Test
+	public void insertionTest() {
+		
+		final Integer[] input = testCase.getInput().clone();
+		
+		Sort.algorithm().insertion().sort(input, (x, y) -> Integer.compare(x, y));
+		
+		Assert.assertArrayEquals(testCase.getSolution(), input);
+	}
+	
+	@Test
 	public void selectionTest() {
 
-		Integer[] input = testCase.getInput().clone();
+		final Integer[] input = testCase.getInput().clone();
 
 		Sort.algorithm().selection().sort(input, (x, y) -> Integer.compare(x, y));
 
@@ -28,7 +38,7 @@ public class SortRandomTest {
 	@Test
 	public void bubbleTest() {
 
-		Integer[] input = testCase.getInput().clone();
+		final Integer[] input = testCase.getInput().clone();
 
 		Sort.algorithm().bubble().sort(input, (x, y) -> Integer.compare(x, y));
 

@@ -5,6 +5,13 @@ import java.util.Comparator;
 import com.brazilianbytes.ctci.algorithm.sort.SortInterface;
 import com.brazilianbytes.ctci.algorithm.sort.Util;
 
+/**
+ * My implementation of 'Bubble Sort'
+ * Big O: <wip>
+ * 
+ * @author luciano
+ *
+ */
 public final class Bubble implements SortInterface {
 
 	@Override

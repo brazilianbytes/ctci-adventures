@@ -1,8 +1,15 @@
 package com.brazilianbytes.ctci.algorithm.sort;
 
 import com.brazilianbytes.ctci.algorithm.sort.bubble.Bubble;
+import com.brazilianbytes.ctci.algorithm.sort.insertion.Insertion;
 import com.brazilianbytes.ctci.algorithm.sort.selection.Selection;
 
+/**
+ * Utility class to reunite all tpes of Sort
+ * 
+ * @author luciano
+ *
+ */
 public final class Sort {
 	
 	private Sort() {
@@ -23,6 +30,7 @@ public final class Sort {
 
 		private SortInterface bubble;
 		private SortInterface selection;
+		private SortInterface insertion;
 
 		public SortInterface bubble() {
 
@@ -41,6 +49,15 @@ public final class Sort {
 			}
 
 			return this.selection;
+		}
+		
+		public SortInterface insertion() {
+
+			if (this.insertion == null) {
+				this.insertion = new Insertion();
+			}
+
+			return insertion;
 		}
 
 	}

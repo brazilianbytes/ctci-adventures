@@ -12,7 +12,7 @@ public final class TestUtil {
 		
 		final Integer[] input = new Integer[size];
 		
-		Arrays.setAll(input, (index) -> ThreadLocalRandom.current().nextInt(-999, 999));
+		Arrays.setAll(input, (index) -> ThreadLocalRandom.current().nextInt(-size, size));
 
 		Integer[] solution = input.clone();
 
